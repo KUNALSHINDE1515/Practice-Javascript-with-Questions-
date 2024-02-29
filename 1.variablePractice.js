@@ -44,6 +44,7 @@ function myFunction(){
     console.log(check); 
 }
 
+
 {
     var abcd = "deshmukh"
 }
