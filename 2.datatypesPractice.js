@@ -67,39 +67,116 @@ let kjh = "shindeKUnal"
 let diff = "kunal shinde"
 // console.log(indexOf(diff));
 
-let result = diff.indexOf("shinde") // indexOf() ekadya sting chi postion kiti ahe (ex. array of index) tyasathi use kele jate
-console.log(result);
+let result = diff.indexOf("s") // indexOf() ekadya sting chi postion kiti ahe (ex. array of index) tyasathi use kele jate
+// console.log(result);
 
-let lastResult = diff.lastIndexOf("kunal")
-console.log(lastResult);
+// let lastResult = diff.lastIndexOf("e")
+// console.log(lastResult);  
+
+/*indexOf() returns the index for the first occurrence of the substring.
+ lastIndexOf() returns the index for the last occurrence of the substring. */
 
 // How do you concatenate strings in JavaScript?
-// How do you access individual characters in a string?
-// Booleans:
+let CC = "kunal"
+let bd = "shinde"
 
-// What are boolean values in JavaScript?
-// Explain truthy and falsy values in JavaScript.
-// How do you negate a boolean value in JavaScript?
-// How do you convert other data types to boolean?
+// console.log(CC+ bd);
+// console.log(CC.concat(bd)); // this are two methods to cancat string
+
+// How do you access individual characters in a string?  -->In JavaScript, you can access individual characters in a string using bracket notation ([]) or the charAt() method. Here's how you can do it:
+
+let str = "hellooo pune"
+// console.log(str.charAt(1));
+// console.log(str[8]);
+
+
+//=================================================== Booleans====================================================================================
+
+// What are boolean values in JavaScript? -->true and false
+
+// Explain truthy and falsy values in JavaScript. -->     lean one more time the learning of this topic is not good
+
+// How do you negate a boolean value in JavaScript?  !--> this operator is negalate value in js
+
+const bharat = false
+let negalate = !bharat
+// console.log(negalate); // the output will bw true
+
+
+// How do you convert other data types to boolean? --> Bollean() this function will be used
+
+let jaiShriRAm = Boolean(0);
+// console.log(jaiShriRAm);
+
+
 // Arrays:
 
 // How do you create an array in JavaScript?
+const myArray = [1,2,4,"kunal", "shinde", 4567889,"ram-ram"]; // this is array we created in js
+
+
 // Explain the difference between push() and pop() methods.
+
+//  console.log(myArray.push("nath saheb"));  // the push method we use puns the element in array
+//  console.log(myArray.pop()); // this method remove last element from array
+
+
 // How do you access elements in an array?
+
+// console.log(myArray[3]) // we acces the element in array with [] notations there are the example
+
+
 // How do you check if a variable is an array?
+
+// console.log(Array.isArray(myArray));  // if we can check the variable is array --> Array.isArray()  --> we are use 
+
+
 // Objects:
 
 // What is an object in JavaScript?
+// ---> In simple words object is key-value pairs in javascript each value has unique key and datatypes
+
 // How do you access properties of an object?
+const myObject = {
+    name: "Ranjet",
+    month: "march",
+    reserve : true
+}
+
+// console.log(myObject.name); //  that way to acces propeties in javascript
+
 // How do you add or modify properties of an object?
-// How do you loop through the properties of an object?
+// myObject.city = "pune"; // This is waty to modify propeties of an object
+// myObject.name = "Deshmukh";
+// console.log(myObject);  
+
+
+// How do you loop through the properties of an object? // ---> this problem solve after complete js practice
+
 // Undefined and Null:
 
 // Explain the difference between undefined and null.
 // When do you get undefined in JavaScript?
+let checkUndef;
+console.log(checkUndef);    // when we declare the variable but value does not assign the output will be undefined
+
 // How do you explicitly set a variable to null?
+let variable = null ;
+console.log(variable);
 // Type Conversion:
 
 // How do you convert a string to a number in JavaScript?
+
+const concver = "12345";
+console.log(Number(concver));
 // How do you convert a number to a string in JavaScript?
+
+const Ss = 1212454;
+const tyoe = String(Ss) // this is use dto type of 
+// console.log(typeof(tyoe));
+
 // Explain implicit and explicit type conversion.
+
+let num1 = 1234;
+let implicit = "This is a number " +num1 ; // this are the implicit conversion in javasript
+console.log(implicit);
