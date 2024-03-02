@@ -60,6 +60,7 @@ delete diff.gender
 
 // Looping Through Object Properties:
 
+
 // How do you loop through all the properties of an object?
 // Object Methods:
 
