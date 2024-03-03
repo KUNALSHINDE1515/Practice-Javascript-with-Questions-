@@ -62,9 +62,27 @@ delete diff.gender
 
 
 // How do you loop through all the properties of an object?
+
+for (const key in diff) {
+    // console.log(diff);
+    }
+
+    Object.keys(diff).forEach(key =>{
+        console.log(diff);
+    })
 // Object Methods:
 
-// What are object methods in JavaScript?
+// What are object methods in JavaScript? 
+
+/**Functions as Properties: In JavaScript, functions can be defined as properties within an object. These functions become methods of the object.
+
+Accessing Object Methods: Object methods can be accessed and invoked using dot notation (object.method()) or bracket notation (object['method']()).
+
+This Keyword: Inside an object method, the this keyword refers to the object that the method belongs to. It allows the method to access and modify the object's properties.
+
+Adding and Modifying Methods: You can add or modify object methods dynamically at runtime, just like any other property of the object. */
+
+
 // How do you define a method for an object?
 // Object Constructors:
 
