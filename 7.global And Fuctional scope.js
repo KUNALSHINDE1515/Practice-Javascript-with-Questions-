@@ -78,7 +78,19 @@ function outer() {
 
 // Practice Problems:
 // a. Write a function that declares a global variable and accesses it from within the function.
+ let globalcheck = 1414
+ {
+    console.log(globalcheck);
+ }
 // b. Write a function that declares a local variable and accesses it from outside the function.
+
+{
+    let localcheck = "Deshmukh"
+
+}
+// console.log(localcheck);  // ---> not define error throw
+
+
 // c. Write a function that demonstrates variable shadowing.
 // d. Explain the difference between var, let, and const in terms of scope.
 
@@ -88,7 +100,8 @@ function outer() {
 // c. Write a nested function that accesses variables from both its local scope and the outer function's scope.
 
 // Block Scope:
-// a. What is block scope?
+// a. What is block scope? 
+{}
 // b. Which JavaScript keywords introduce block scope?
 // c. How does block scope differ from function scope?
 
