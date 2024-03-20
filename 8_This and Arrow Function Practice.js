@@ -8,6 +8,7 @@ let result = add(25,58)
 console.log(result);
 // Convert the add function from question 1 into an arrow function.
 
+add()
 // Write a regular JavaScript function called isEven that takes a parameter num and returns true if num is even, and false otherwise.
 
 // Convert the isEven function from question 3 into an arrow function.
