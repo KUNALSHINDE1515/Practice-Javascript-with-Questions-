@@ -45,8 +45,35 @@ console.log(greet("ks"));
 
 //Write a regular JavaScript function called calculateArea that takes two parameters length and width and returns the area of a rectangle (length * width).
 
+function calculateArea(length , width){
+    return length * width;
+}
+
+let area = calculateArea(8,6);
+console.log(area);
 // Convert the calculateArea function from question 7 into an arrow function.
 
-// Write a regular JavaScript function called printNumbers that takes a parameter n and prints the numbers from 1 to n (inclusive) to the console.
+calculateArea((l ,b) => {
+    return l * b;
+})
+console.log(calculateArea(5,5));
+// Write a regular JavaScript function called printNumbers that takes a parameter n and prints the numbers from 1 to n (inclusive) to the console.f
+function printNumbers(n) {
+    for (let i = 0; i<= n; i++) {
+        console.log(i);
+        
+    }
+} 
+
+printNumbers(10)
 
 // Convert the printNumbers function from question 9 into an arrow function
+printNumbers((num) => {
+    for(let i = 0; i <= num ; i++ ){
+        console.log(i);
+    }
+})
+
+console.log("second  stage");
+
+printNumbers(20)
