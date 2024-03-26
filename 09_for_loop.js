@@ -47,14 +47,51 @@ const restuloeignal = reverse("lanuk")
 
 // Sum of Array: Write a JavaScript program to find the sum of elements in an array using a for loop.
 
-let arrsum = [2,4,6,8,10,12,45,69]
-for (let i = arrsum.length ; i <; i++){
-    const element = array[i];
+// let arrsum = [2,4,6,8,10,12,45,69]
+// for (let i = arrsum.length ; i <; i++){
+//     const element = array[i];
    
-}
+// }
 // Prime Numbers: Write a JavaScript program to print prime numbers between 1 to 50 using a for loop.
 
+function isPrime(num){
+    
+    if (num < 2) {
+        return false
+    }
+
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+        
+    }
+
+    return true;
+}
+
+function printPrimeNumber() {
+    for (let i = 1; i <=50; i++) {
+        if (isPrime(i)) {
+            console.log(i);
+        }
+        
+    }
+}
+
+printPrimeNumber()
 // Table of a Number: Write a JavaScript program to print the multiplication table of a given number using a for loop.
+
+function table(num) {
+    for (let i = 1; i <=10; i++) {
+        
+        let result = num * i
+        console.log(`This is a ${num} * ${i} table : ${result}`);
+        
+    }
+}
+let padha = table(10);
+console.log(padha);
 
 // Fibonacci Series: Write a JavaScript program to generate the Fibonacci series up to a specified number of terms using a for loop.
 
