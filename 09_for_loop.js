@@ -95,6 +95,34 @@ console.log(padha);
 
 // Fibonacci Series: Write a JavaScript program to generate the Fibonacci series up to a specified number of terms using a for loop.
 
-// Power Calculation: Write a JavaScript program to calculate the power of a number using a for loop.
+let a = 0;
+let b = 1;
 
+let FibonacciSeries = [];
+
+for (let i = 0; i <=10; i++) {
+    
+    let c = a+ b;
+    FibonacciSeries.push(c)
+
+    a = b
+    b = c
+    
+}
+console.log(FibonacciSeries);
+
+// Write a JavaScript program to calculate the power of a number using a for loop.
+
+function power(base , exponets) {
+    
+    let result = 1;
+    for (let i = 0; i < exponets; i++) {
+        result *= base
+        
+    }
+    return result;
+}
+
+let c = power(5,2)
+console.log(c);
 // Count Characters: Write a JavaScript program to count the number of occurrences of a specific character in a given string using a for loop.
