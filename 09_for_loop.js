@@ -25,7 +25,7 @@ function factorial(number) {
     }
     return factorial;
 }
-
+console.log("chek facrorial");
 const fresult = factorial(5)
 // console.log(fresult);
 
