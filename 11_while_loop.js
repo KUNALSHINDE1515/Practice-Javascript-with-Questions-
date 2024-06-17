@@ -29,7 +29,7 @@ function calculateFactotial(num) {
 const result = calculateFactotial(5);
 console.log(result );
 // Write a JavaScript program to find the sum of digits of a number using a while loop.
-// Write a JavaScript program to reverse a number using a while loop.
+// Write a JavaScript program to reverse a number using a while .
 // Write a JavaScript program to print the Fibonacci series using a while loop.
 // Write a JavaScript program to check whether a number is prime or not using a while loop.
 // Write a JavaScript program to find the GCD (Greatest Common Divisor) of two numbers using a while loop.
