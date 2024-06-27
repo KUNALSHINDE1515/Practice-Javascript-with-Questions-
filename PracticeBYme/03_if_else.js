@@ -1,7 +1,7 @@
 // Number Check: Write a program that asks the user to enter a number and determines if it's positive, negative, or zero.
 
 // let Number = parseFloat(prompt("Eneter Your Number"));
-// let Number = 3
+// // let Number = 3
 // if (Number > 0) {
 //     console.log(`${Number} is positive`);
 // }
@@ -12,16 +12,35 @@
 //     console.log(`${Number} is negative`);
 // }
 
+// IN above code error occurs beacuse of ----->The error occurs because the prompt function is not available in a Node.js environment by default. The prompt function is typically used in a browser environment to interact with the user through a pop-up window.
 
+// const readline = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+//   });
+  
+//   readline.question("Enter a number: ", number => {
+//     let num = parseFloat(number);
+  
+//     if (num > 0) {
+//       console.log("The number is positive.");
+//     } else if (num < 0) {
+//       console.log("The number is negative.");
+//     } else {
+//       console.log("The number is zero.");
+//     }
+  
+//     readline.close();
+//   });
 // Even or Odd: Write a program that asks the user for a number and determines if it's even or odd.
 
-let num1 = 3
-if (num1 % 2 === 0) {
-    console.log(`${num1} is even`);
-}
-else{
-    console.log(`${num1} is odd`);
-}
+// let num1 = 3
+// if (num1 % 2 === 0) {
+//     console.log(`${num1} is even`);
+// }
+// else{
+//     console.log(`${num1} is odd`);
+// }
 // Greater Than: Write a program that asks the user for two numbers and prints the larger one.
 
 // let one = 15
@@ -48,26 +67,26 @@ else{
 
 // Equality Check: Write a program that asks the user for a password and checks if it matches a predefined value ("secret").
 
-let pass = "pass@123"
+// let pass = "pass@123"
 
-if (pass == "pass@123587") {
-    console.log(`PassWord is write`);
-}else{
-    console.log(`Password is wrong`);
-}
+// if (pass == "pass@123587") {
+//     console.log(`PassWord is write`);
+// }else{
+//     console.log(`Password is wrong`);
+// }
 // String Comparisons:
 
 // Empty String: Write a program that asks the user for a string and determines if it's empty.
 // Vowel Check: Write a program that asks the user for a character and determines if it's a vowel (a, e, i, o, u).
 // Case Sensitivity: Write a program that asks the user for a string and checks if it's all uppercase, all lowercase, or mixed case.
 
-let kunal = "KUNA";
+// let kunal = "KUNA";
 
-if (kunal ===kunal.toLowerCase()) {
-    console.log(`${kunal} Your data is lowecase`);
-}else{
-    console.log(`${kunal} Your data is  uppercase`);
-}
+// if (kunal ===kunal.toLowerCase()) {
+//     console.log(`${kunal} Your data is lowecase`);
+// }else{
+//     console.log(`${kunal} Your data is  uppercase`);
+// }
 // Username Validation: Write a program that asks the user for a username and checks if it contains only letters, numbers, and underscores.
 // Password Strength: Write a program that asks the user for a password and determines its strength based on length (weak, moderate, strong).
 // Age and Grade Calculations:
