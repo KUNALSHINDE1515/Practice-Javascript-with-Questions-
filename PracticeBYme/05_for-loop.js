@@ -78,15 +78,15 @@
 
 
 // Given an array of numbers, find the smallest element.
-// let array = [88,78,45,96,33,22,55,65,,45,21,211]
-// let arrayAsmalest = array[0]
+let array = [88,78,45,96,33,22,55,65,,45,21,211]
+let arrayAsmalest = array[0]
 
-// for (let i = 0; i < array.length; i++) {
-//     if (array[i] < arrayAsmalest) {
-//         arrayAsmalest = array[i];
-//     }
+for (let i = 0; i < array.length; i++) {
+    if (array[i] < arrayAsmalest) {
+        arrayAsmalest = array[i];
+    }
     
-// }
+}
 // console.log(arrayAsmalest);
 // String Manipulation:
 
@@ -95,7 +95,44 @@
 // Challenge Problems:
 
 // Write a program that prints the Fibonacci sequence up to a certain number (0, 1, 1, 2, 3, 5, etc.).
+let n1 = 0,
+n2 = 1,
+result;
+let Number =25;
+for (let i = 1; i <= Number; i++) {
+    console.log(n1);
+   result = n1 + n2
+   n1 = n2
+   n2 = result  
+}
+console.log(result)
+
+// function fibonacci(number) {
+//     // Initialize the first two Fibonacci numbers
+//     let a = 0;
+//     let b = 1;
+  
+//     // Loop through the sequence up to the specified number
+//     for (let i = 0; i < number; i++) {
+//       console.log(a);
+//       // Calculate the next Fibonacci number
+//       let c = a + b; 
+//       // Update a and b for the next iteration
+//       a = b;
+//       b = c;
+//     }
+//   }
+  
+  // Get the number from the user (optional)
+  // let number = parseInt(prompt("Enter the limit for the Fibonacci sequence: "));
+  
+  // Example usage (replace with the prompt line above if desired)
+//   let number = 10;
+  
+//   fibonacci(number);
 // Write a program that simulates a simple dice roll. Generate a random number between 1 and 6 and print the result.
+let DiceNumber = Math.round(Math.random() * 6) + 1
+// console.log(DiceNumber);
 // Bonus:
 
 // Explore nested for loops. Print a multiplication table for a given number.
