@@ -3,11 +3,25 @@
 // 1. **Addition Function:**
 //    Define a function `add` that takes two numbers as arguments and returns their sum.
 
+function addTwoNumber(num1, num2){
+    return num1 + num2;
+}
+console.log(addTwoNumber(88,55));
 // 2. **Multiplication Function:**
 //    Define a function `multiply` that takes two numbers as arguments and returns their product.
+function addTwoNumber1(num1, num2){
+    return num1 *  num2;
+}
+console.log(addTwoNumber1(88,55));
 
 // 3. **Greeting Function:**
 //    Define a function `greet` that takes a name as an argument and returns a greeting message (e.g., "Hello, [name]!").
+
+function greet(name){
+    return ` Hello ${name} Welcome to our service`;
+}
+
+console.log(greet("kunal"));
 
 // 4. **Reverse String Function:**
 //    Define a function `reverseString` that takes a string as an argument and returns the reversed version of the string.
