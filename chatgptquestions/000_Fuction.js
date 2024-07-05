@@ -55,14 +55,67 @@ factorial(5)
 // 6. **Check Prime Function:**
 //    Define a function `isPrime` that takes a number as an argument and returns `true` if the number is prime, otherwise `false`.
 
+function checkPrime(number){
+    
+    if(number <= 0) return false
+    if(number <= 3) return true
+
+    if(number % 2 === 0 || number % 3 === 0) return false
+    for (let i = 5; i * i <= number; i+=6) {    
+        if (number % i ===0  || number % (i + 2) ===0) return false
+
+    }
+    return true;
+}
+console.log(checkPrime(1));
+console.log(checkPrime(10));
+
+
 // 7. **Concatenate Arrays Function:**
 //    Define a function `concatArrays` that takes two arrays as arguments and returns a new array that concatenates both arrays.
 
+function concatArrays( arr1, arr2){
+
+    let result = [...arr1, ...arr2]
+    return result
+
+}
+
+let arr1 = [1, 2, 3, 4, 5]
+let arr2 = [6, 7, 8 ,9 ,10]
+const result = concatArrays(arr1,arr2);
+console.log(result);
+
+
 // 8. **Filter Even Numbers Function:**
 //    Define a function `filterEvenNumbers` that takes an array of numbers as an argument and returns a new array containing only the even numbers.
+function filterEvenNumbers(parameter){
+    const newArr = []
+    for (let i = 0; i < parameter.length; i++) {
+      const currentNUmber = parameter[i]
 
+      if (currentNUmber % 2 === 0) {
+         newArr.push(currentNUmber)
+      }
+    }
+    return newArr
+}
+let parameter = [2,4,6,5,8,7,1,3,9,10]
+const pass = filterEvenNumbers(parameter)
+console.log(pass);
 // 9. **Sum of Array Function:**
 //    Define a function `sumArray` that takes an array of numbers as an argument and returns the sum of all the numbers in the array.
+
+function sumArray(numbers){
+
+    for (let i = 0; i < numbers.length; i++) {
+        
+    }
+}
+
+let SumArr = [1, 2, 5, 8, 7, 9, 200]
+let sum = sumArray(SumArr)
+console.log(sum);
 
 // 10. **Count Occurrences Function:**
 //     Define a function `countOccurrences` that takes an array and a value as arguments and returns the number of times the value appears in the array.
