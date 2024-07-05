@@ -6,13 +6,13 @@
 function addTwoNumber(num1, num2){
     return num1 + num2;
 }
-console.log(addTwoNumber(88,55));
+// console.log(addTwoNumber(88,55));
 // 2. **Multiplication Function:**
 //    Define a function `multiply` that takes two numbers as arguments and returns their product.
 function addTwoNumber1(num1, num2){
     return num1 *  num2;
 }
-console.log(addTwoNumber1(88,55));
+// console.log(addTwoNumber1(88,55));
 
 // 3. **Greeting Function:**
 //    Define a function `greet` that takes a name as an argument and returns a greeting message (e.g., "Hello, [name]!").
@@ -21,13 +21,36 @@ function greet(name){
     return ` Hello ${name} Welcome to our service`;
 }
 
-console.log(greet("kunal"));
+// console.log(greet("kunal"));
 
 // 4. **Reverse String Function:**
 //    Define a function `reverseString` that takes a string as an argument and returns the reversed version of the string.
 
+function reverseString(str){
+    let check = "";
+    for (let i = str.length -1; i>=0; i--){
+        console.log(i);
+        check +=str[i]
+    }
+    console.log(check);
+}
+reverseString("kunal")
+
 // 5. **Factorial Function:**
 //    Define a function `factorial` that takes a number as an argument and returns its factorial.
+
+function factorial(number){
+    let ans = 1
+    if(number === 0){
+        return 1;
+    }
+   for(let i = 2; i <= number; i++){
+    ans*=i
+   }
+   console.log(ans);
+}
+
+factorial(5)
 
 // 6. **Check Prime Function:**
 //    Define a function `isPrime` that takes a number as an argument and returns `true` if the number is prime, otherwise `false`.
@@ -78,9 +101,9 @@ function findMedian(array){
     }
 }
 
-let medianArry = [1,5,7,8,9,6,4,8,6,5,4,3,56,98,8]
-let result = findMedian(medianArry)
-console.log(result);
+// let medianArry = [1,5,7,8,9,6,4,8,6,5,4,3,56,98,8]
+// let result = findMedian(medianArry)
+// console.log(result);
 
 
 // 20. **Remove Duplicates Function:**
