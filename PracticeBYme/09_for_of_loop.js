@@ -26,13 +26,31 @@ let sumArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 let sum = 0
 for (const nums of sumArray) {
     sum = sum + nums
-    console.log(sum); 
+    // console.log(sum); 
 
 }
 // How can you create a new array containing the doubled values of each element in an array using for...of?
 // Explain how to find the maximum value in an array using for...of.
+
+
+for (const max of sumArray) {
+    let maximim = max[0]
+    maximim = max > sumArray
+    console.log(maximim);
+}
 // Other Iterables
 // Can you use for...of with Maps? If yes, how?
+
+const check = new Map()
+check.set("kunal", "shuinde")
+check.set("Shubham", "shuinde")
+console.log(check);
+
+for (const [key, value] of check) {
+    console.log([key ," ", value ]);  //map la jar for of loop lavayache asel tarr [] notationn use karayche 
+}
+
+
 // What about Sets? Can you use for...of with them?
 // How can you iterate over the keys of a Map using for...of?
 // Complex Scenarios
