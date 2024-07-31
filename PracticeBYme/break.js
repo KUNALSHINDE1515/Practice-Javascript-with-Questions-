@@ -11,17 +11,44 @@ function oddEven(number) {
         console.log(`Number is odd`);
     }
 }
-oddEven(0)
+// oddEven(0)
 // Factorial: Calculate the factorial of a non-negative integer.
 // Prime Number: Check if a given number is prime.
+
+function CheckPrime(number) {
+    if(number % 2 == 0){
+        console.log(`${number} is Prime`);
+    }else{
+        console.log(`${number} is not prime`);
+    }
+}
+
+CheckPrime(8)
 // Fibonacci Series: Generate the first n terms of the Fibonacci series.
 // Reverse a String: Reverse a given string.
+function reveseString(string) {
+    
+    for (let i = 0; i < string.length; i++) {
+        console.log(i);
+
+        
+    }
+}
+
+reveseString("kuanl")
 // Arrays and Loops
 // Array Reversal: Reverse an array without using the built-in reverse method.
+
+let arr = [1,2,3,4,5,6]
+
+for (let i = 0; i < arr.length; i++) {
+    
+}
 // Find Maximum and Minimum: Find the maximum and minimum values in an array.
 // Array Sum: Calculate the sum of all elements in an array.
 // Remove Duplicates: Remove duplicate elements from an array.
 // Anagram Check: Determine if two strings are anagrams of each other.
+
 // Conditional Logic and Functions
 // Leap Year: Check if a given year is a leap year.
 // Calculator: Create a simple calculator that performs basic arithmetic operations.
