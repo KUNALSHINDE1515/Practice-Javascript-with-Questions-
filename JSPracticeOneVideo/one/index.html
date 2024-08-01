@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="number" name="" step="any" id="data"/>kms
+    <button onclick="convert()">Convert</button> miles
+    <h1 id="result"></h1> -->
+
+     <!-- farehenits-->
+    <input type="" name="" id="data"/> 
+    <br>
+    <button onclick="convert()">Convert</button>
+    <h1 id="result"></h1>
+</body>
+<script>
+
+// function convert() {
+//     let kms = document.getElementById('data').value;
+//     const factor = 0.621371;
+//     let miles = kms * factor
+//     document.getElementById('result').innerHTML = `${miles} miles`
+// }
+
+// function convert(){
+//     let c = document.getElementById('data').value;
+//     let f = (c * 1.8) + 32;
+//     // alert(f)
+// document.getElementById('result').innerText = `${c} C  = ${f} F`
+// }
+
+function convert() {
+    let data = document.getElementById('data').value;
+    // let res = Math.sign(data)
+    if(data > 0){
+        res = `Postive Number`
+    }else if(data < 0){
+        res = `Negative Number`
+    }else{
+        res = `Zero`
+    }
+    document.getElementById('result').innerHTML = ` RESULT :${res}`
+    }
+</script>
+</html>
