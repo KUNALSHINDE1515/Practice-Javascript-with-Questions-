@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest NUmber</title>
+</head>
+<body>
+    
+</body>
+<script>
+     function check(p,q,c) {
+     if(p >= q && p >= c ){
+     return p;
+    }else if(q >= p && q >=c){
+     return q;
+    }else{
+        return c
+    }
+    }
+ let a = prompt("Enter Frist NUmber")
+ let b = prompt("Enter 2 NUmber")
+ let c = prompt("Enter 3 NUmber")
+
+ let x = check(a,b,c)
+ 
+
+console.log(`${a}, ${b}, ${c}, largest : ${x}`);
+</script>
+</html>
