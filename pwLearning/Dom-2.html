@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Dom part 2</title>
+</head>
+<body>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>    
+</body>
+<script>
+
+     //append child
+  const title =   document.createElement('div')
+  title.className = "KUNAL"
+  title.style.fontSize = "32px"
+  title.innerText = "Shinde kunal NAmskate"
+  console.log(title);
+  document.body.appendChild(title);
+
+//   remove child
+
+const ul = document.querySelector('ul')
+let lists = document.querySelectorAll('li')
+console.log(lists);
+for(list of lists){
+    ul.removeChild(list)
+}
+
+</script>
+</html>

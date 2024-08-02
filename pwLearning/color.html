@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Color CHnager</title>
+   <!-- styling -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #box1{
+            background-color: purple;
+        }
+        #box2{
+            background-color: red;
+        }
+        #box3{
+            background-color: white;
+        }
+        #box4{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1 box"></div>
+        <div id="box2 box"></div>
+        <div id="box3 box"></div>
+        <div id="box4 box"></div>
+    </div>
+
+
+    <!-- js -->
+
+    <script>
+       const boxes =  document.getElementById('.box')
+       boxes.addEventListener('click', function(){
+        document.body.style.backgroundColor = "red"
+       })
+    </script>
+</body>
+</html>

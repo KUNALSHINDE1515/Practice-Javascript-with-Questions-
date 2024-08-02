@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PART  - 1</title>
+</head>
+<body>
+
+    <!-- idd -->
+     <p id="one">kunal</p>
+<!-- class -->
+ <ul>
+    <li class="tech">One</li>
+    <li class="tech">Two</li>
+    <li class="tech">Three</li>
+ </ul>
+ <!-- // tagName -->
+
+
+ <!-- query Selector -->
+  <h2>hello</h2>
+  <h2 class="classs">holo</h2>
+  <h2 class="class">hey</h2>
+
+
+ <h4>hey</h4>
+ <h4>Namste</h4>
+ <h4>holo</h4>
+    <script>
+        //id
+        const var1 = document.getElementById('one');
+        // console.log(var1.innerText);
+
+        // class
+        const result = document.getElementsByClassName('tech')
+        console.log(result[2].innerText);
+        result[1].innerText = "REact JS";
+
+        // tagName
+        const var3 = document.getElementsByTagName('h4')
+        console.log(var3[1].innerText);
+        var3[2].innerText = "Hello PW skill"
+        var3[2].style.color = "blue"
+
+        // query selector
+
+       const var4 =  document.querySelector('.classs')
+       console.log(var4);
+
+    //    var4.className = "hello"
+    var4.classList = "hello hello hlodk"
+    var4.setAttribute("tittle","KUnal")
+    </script>
+</body>
+</html>

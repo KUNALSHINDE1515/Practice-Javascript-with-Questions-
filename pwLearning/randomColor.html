@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM PROJECT</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #button{
+        padding: 16px;
+        font-size: 20px;
+        border-radius: 25px;
+        background-color: gray;
+    }
+</style>
+<body>
+    <button id="button">Press ME to check</button>
+
+</body>
+<!-- script  -->
+
+<script>
+
+const button = document.getElementById('button')
+const radomColor =  () => {
+    let val = "0123456789ABCDEF";
+    let cons =  "#";
+
+    for (let i = 0; i < 6; i++) {
+       cons = cons + val[Math.round(Math.random() * 16)]
+    }
+    return cons;
+}
+
+// console.log(radomColor());
+
+function changeRandomColor(){
+    document.body.style.backgroundColor = radomColor()
+}
+
+button.addEventListener('click', changeRandomColor)
+
+</script>
+</html>
